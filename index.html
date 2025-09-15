@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESERCIZI SNACKS MODULO 1</title>
+  </head>
+  <body>
+    <h1><b>SNACKS MDOULO 1</b></h1>
+    <h2>🏆 <b>Snack 1</b></h2>
+
+    <ul>
+      Crea una funzione che somma due numeri.
+      <li>
+        Crea una funzione dichiarativa chiamata <b>somma</b> che accetta due
+        numeri e restituisce la loro somma.
+      </li>
+      <li>
+        Poi, definisci la stessa funzione <b>somma</b> ma come funzione anonima
+        assegnata a una variabile
+      </li>
+      <li>
+        Quindi, riscrivi la funzione <b>somma</b> con la sintassi delle arrow
+        functions.
+      </li>
+    </ul>
+    <script src="snacks/snack1.js"></script>
+    <h2>🏆 <b>Snack 2</b></h2>
+    <ul>
+      Crea una arrow function che calcola il quadrato di un numero.
+      <li>
+        Definisci una funzione chiamata quadrato che accetta un numero e
+        restituisce il suo quadrato in una sola riga.
+      </li>
+    </ul>
+    <script src="snacks/snack2.js
+    "></script>
+    <h2>🏆 Snack 3</h2>
+
+    <ul>
+      Crea una funzione
+      <b>eseguiOperazione</b>
+      <li>
+        Definisci una funzione eseguiOperazione che accetta tre parametri: due
+        numeri e una funzione operatore (callback). La funzione deve eseguire
+        l'operazione fornita sui due numeri.
+      </li>
+    </ul>
+    <p>
+      Esempio di uso: <br />
+      const somma = (a, b) return a + b; <br />
+      <!-- ricordarsi => -->
+      const moltiplica = (a, b) return a * b;<br />
+      <!-- ricordarsi => -->
+      const eseguiOperazione = (a, b, operazione) return operazione(a, b);<br />
+      console.log(eseguiOperazione(3, 4, somma)); // 7 <br />
+
+      console.log(eseguiOperazione(3, 4, moltiplica)); // 12 <br />
+    </p>
+    <script src="snacks/snack3.js
+    "></script>
+    <h2><b>🏆 Snack 4</b></h2>
+    <ul>
+      Crea un generatore di funzioni
+      <b>creaTimer</b>
+      <li>
+        Scrivi una funzione <b>creaTimer</b> che accetta un tempo (in ms) e
+        restituisce una nuova funzione che avvia un setTimeout per stampare
+        "Tempo scaduto!".
+      </li>
+    </ul>
+    <script src="snacks/snack4.js"></script>
+    <h2><b>🏆 Snack 5</b></h2>
+    <ul>
+      Crea una funzione
+      <b>stampaOgniSecondo</b>
+      con setInterval.
+      <li>
+        Definisci una funzione che accetta un messaggio e lo stampa ogni
+        secondo.
+
+        <b>Nota</b>: Questa funzione creerà un loop infinito. Interrompilo
+        manualmente o usa clearInterval() in un altro script.
+      </li>
+    </ul>
+    <script src="snacks/snack5.js"></script>
+    <h2><b>🏆 Snack 6</b></h2>
+    <ul>
+      Crea un contatore automatico con
+      <b>setInterval</b>
+      <li>
+        Definisci una funzione <b>creaContatoreAutomatico</b> che accetta un
+        intervallo di tempo e restituisce una funzione che avvia un
+        <b>setInterval</b>, incrementando un contatore e stampandolo.
+      </li>
+    </ul>
+    <script src="snacks/snack6.js"></script>
+    <h2><b>🏆 Snack 7.</b></h2>
+    <ul>
+      Crea una funzione che ferma un timer dopo un certo tempo
+      <li>
+        Scrivi una funzione <b>eseguiEferma</b> che accetta un messaggio, un
+        tempo di avvio e un tempo di stop. Il messaggio deve essere stampato a
+        intervalli regolari, ma si deve fermare dopo il tempo di stop.
+      </li>
+    </ul>
+    <script src="snacks/snack7.js"></script>
+    <h2>
+      <b>🎯 Snack 8 (Bonus)</b>
+    </h2>
+    <ul>
+      Crea una funzione che simula un conto alla rovescia
+      <li></li>
+      Scrivi una funzione
+      <b>contoAllaRovescia</b>
+      che accetta un numero n e stampa il conto alla rovescia da n a 0, con un
+      intervallo di 1 secondo tra ogni numero. Quando arriva a 0, stampa "Tempo
+      scaduto!" e interrompe il timer.
+    </ul>
+    <p>
+      Esempio di utilizzo: <br />
+      contoAllaRovescia(5) <br />
+      Output atteso: <br />
+      5 <br />
+      4 <br />3 <br />
+      2 <br />
+      1 <br />
+      Tempo scaduto!
+    </p>
+    <script src="snacks/snack8Bonus,js"></script>
+    <h2><b>🎯 Snack 9 (Bonus)</b></h2>
+    <ul>
+      Creare una funzione che esegue una sequenza di operazioni con ritardi
+      <li>
+        Scrivi una funzione <b>sequenzaOperazioni</b> che accetta un array di
+        operazioni (funzioni) e un tempo di intervallo. Ogni operazione deve
+        essere eseguita in sequenza con un ritardo uguale al tempo di
+        intervallo.
+      </li>
+    </ul>
+    <p>
+      Esempio di utilizzo: <br />
+      sequenzaOperazioni([ <br />
+      () = console.log("Operazione1"), <br />
+      <!-- ricordarsi => -->
+      () = console.log("Operazione 2"),<br />
+      <!-- ricordarsi => -->
+      () = console.log("Operazione 3") ], 2000);
+      <!-- ricordarsi => -->
+      <br />
+      Output atteso: <br />
+      Operazione 1 <br />
+      Operazione 2 <br />
+      Operazione 3 Operazione
+    </p>
+    <script src="snacks/snack9Bonus.js"></script>
+    <h2><b>🎯 Snack 10 (Bonus)</b></h2>
+    <ul>
+      Creare un throttler per limitare le esecuzione di una funzione
+      <li>
+        Scrivi una funzione creaThrottler che accetta una funzione e un tempo
+        `limite`.
+      </li>
+      <li>
+        Restituisce una nuova funzione che, quando chiamata ripetutamente,
+        esegue l'operazione originale al massimo una volta ogni n millisecondi.
+      </li>
+    </ul>
+
+    <p>
+      Esempio di utilizzo: <br />
+      const throttledLog = creaThrottler(() = console.log("Eseguito!"), 2000)
+      <!-- ricordare => -->
+
+      <br />
+      throttledLog(); // ✅ "Eseguito!" <br />
+      throttledLog(); // ❌ Ignorato <br />
+      (chiamato troppo presto) setTimeout(throttledLog, 2500); // ✅ "Eseguito!"
+      (dopo 2.5 secondi)
+    </p>
+    <script src="snacks/snack10Bonus.js"></script>
+  </body>
+</html>
