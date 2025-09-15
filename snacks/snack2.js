@@ -5,8 +5,6 @@
 console.log("Snack 2");
 const numero = 2;
 
-function quadrato(numero) {
-  return numero * numero;
-}
+const quadrato = (numero) => numero * numero;
 
 console.log(`Il quadrato del seguente numero:${numero} è:`, quadrato(numero));

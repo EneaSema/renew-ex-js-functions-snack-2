@@ -12,24 +12,24 @@
 // throttledLog(); // ❌ Ignorato (chiamato troppo presto)
 // setTimeout(throttledLog, 2500); // ✅ "Eseguito!" (dopo 2.5 secondi)
 
-console.log("Snack 10 Bonus");
+// console.log("Snack 10 Bonus");
 
-const stampa = () => console.log("Eseguito");
-const tempoLimite = 2000;
+// const stampa = () => console.log("Eseguito");
+// const tempoLimite = 2000;
 
-function creaThrottler(stampa, tempoLimite) {
-  let ultimaEsecuzione = 0;
-  return function () {
-    let ora = Date.now();
-    if (ora - ultimaEsecuzione >= tempoLimite) {
-      ultimaEsecuzione = ora;
-      stampa();
-    } else console.log("Non posso eseguire ancora");
-  };
-}
+// function creaThrottler(stampa, tempoLimite) {
+//   let ultimaEsecuzione = 0;
+//   return function () {
+//     let ora = Date.now();
+//     if (ora - ultimaEsecuzione >= tempoLimite) {
+//       ultimaEsecuzione = ora;
+//       stampa();
+//     } else console.log("Non posso eseguire ancora");
+//   };
+// }
 
-const throttledLog = creaThrottler(stampa, tempoLimite);
+// const throttledLog = creaThrottler(stampa, tempoLimite);
 
-throttledLog(); // ✅ "Eseguito!"
-throttledLog(); // ❌ Ignorato (chiamato troppo presto)
-setTimeout(throttledLog, 2500); // ✅ "Eseguito!" (dopo 2.5 secondi)
+// throttledLog(); // ✅ "Eseguito!"
+// throttledLog(); // ❌ Ignorato (chiamato troppo presto)
+// setTimeout(throttledLog, 2500); // ✅ "Eseguito!" (dopo 2.5 secondi)

@@ -20,9 +20,10 @@
 //   let counter = n;
 //   console.log(counter);
 //   const startCounter = setInterval(() => {
-//     counter--;
-//     console.log(counter);
-//     if (counter === 0) {
+//     if (counter > 0) {
+//       counter--;
+//       console.log(counter);
+//     } else {
 //       clearInterval(startCounter);
 //       console.log("tempo scaduto!");
 //     }
